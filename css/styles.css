@@ -10,7 +10,7 @@
 /* HEADER MUJERES */
 .headerMujer {
   grid-area: header;
-  background-color: e6e0c5;
+  background-color: #535353;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -79,7 +79,7 @@
 /* estilos del header HOMBRE */
 .headerHombre {
   grid-area: header;
-  background-color: e6e0c5;
+  background-color: #535353;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -148,7 +148,7 @@
 /* estilos del header CHICOS */
 .headerChicos {
   grid-area: header;
-  background-color: e6e0c5;
+  background-color: #535353;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -203,7 +203,7 @@
 /* Estilos Pagino Nosotros */
 /* estilos del header NOSOTROS */
 .headerNosotros {
-  background-color: e6e0c5;
+  background-color: #535353;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -264,7 +264,7 @@ body {
 
 .headerPrincipal {
   grid-area: header;
-  background-color: e6e0c5;
+  background-color: #535353;
   display: flex;
   justify-content: space-between;
   align-items: center; }
