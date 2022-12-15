@@ -6,19 +6,29 @@
 
 .contenido-nosotros{
     height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 0fr 0fr ;
+    grid-template-rows: 1fr 1fr 3fr 0.1fr ;
+    grid-template-areas: 
+        "header header header"
+        "main main main"
+        "section section section"
+        "footer footer footer";
 }
 
 /* estilos del header NOSOTROS */
 
 .headerNosotros{
+    grid-area: header;
     background-color: $color-principal;
     display: flex;
     justify-content:space-between;
-    align-items: center;    
+    align-items: center;
 }
 
 .inicioNosotros{
-    padding: 0px remfr;
+    font-size: 1rem;
+    padding: 0px 2.5rem;
 }
 
 .tituloNosotros{
@@ -26,6 +36,10 @@
 }
 
 /* estilos del main NOSOTROS */
+
+.main-nosotros{
+    grid-area: main;
+}
 
 .tituloHistoria{
     text-align: center;
@@ -38,6 +52,13 @@
     text-align: center;
     padding: 2.5rem 2.5rem;
     font-style: oblique;
+}
+
+/* Estilos de Section Nosotros */
+
+
+.section-nosotros{
+    grid-area: section;
 }
 
 .opinion{
@@ -53,7 +74,10 @@
 
 /* estilos de footer NOSOTROS */ 
 
+
+
 .footerNosotros{
+    grid-area: footer;
     background-color: #535353;
     position:relative;
     display:block;
