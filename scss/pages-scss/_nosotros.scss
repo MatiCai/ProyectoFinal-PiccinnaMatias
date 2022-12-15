@@ -4,6 +4,10 @@
 
 /* Estilos Pagino Nosotros */
 
+.contenido-nosotros{
+    height: 100vh;
+}
+
 /* estilos del header NOSOTROS */
 
 .headerNosotros{
@@ -14,7 +18,7 @@
 }
 
 .inicioNosotros{
-    padding: 0px 50px;
+    padding: 0px remfr;
 }
 
 .tituloNosotros{
@@ -25,26 +29,26 @@
 
 .tituloHistoria{
     text-align: center;
-    padding: 60px 0px 30px;
+    padding: 4rem 0px 2rem;
     text-decoration: underline;
 }
 
 .textoHistoria{
     text-align: justify;
     text-align: center;
-    padding: 50px 50px;
+    padding: 2.5rem 2.5rem;
     font-style: oblique;
 }
 
 .opinion{
     text-align: left;
-    margin: 20px;
+    margin: 1rem;
     
 }
 
 .datos{
-    margin: 10px;
-    padding: 20px;
+    margin: 1rem;
+    padding: 1.5rem;
 }
 
 /* estilos de footer NOSOTROS */ 
@@ -54,5 +58,5 @@
     position:relative;
     display:block;
     bottom: 0;
-    margin: 50px 0px 0px;    
+    margin: 2rem 0px 0px;    
 }
