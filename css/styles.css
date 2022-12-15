@@ -1,478 +1,360 @@
-/* reset */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/*Estilos para la Pagina Principal */
-
-/* Estilos Generales INICIO */
-
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color:silver;
-    
-}
-
-/* Estilos del Header INICIO */
-
-.contenido{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr ;
-    grid-template-rows: 0.5fr 2fr 1fr 0.1fr ;
-    grid-template-areas: 
-        "header header header header"
-        "main main main main"
-        "section section section section"
-        "footer footer footer footer";
-}
-
-.headerPrincipal{
-    grid-area: header;
-    background-color: rgb(100, 100, 100);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header img{
-    filter: drop-shadow(1px 1px 3px);
-    animation-name: logo;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-}
-@keyframes logo {
-    to{ 
-        transform: scale(1);
-    }
-
-    from{
-        transform: scale(1.3);
-    }
-    
-}
-
-.logo{
-    position: relative;
-    height: 6rem;
-    width: 6rem;
-}
-
-.menuIndex ul{
-    list-style: none;
-    display: flex;
-}
-.menuIndex ul li:hover{
-    font-weight: bold;
-    transform: scale(0.9);  
-    transition: 0.5s;
-    filter: drop-shadow(5px 5px 3px);    
-
-}
-
-.menuIndex ul li a{
-    background-color:rgb(174, 174, 174);
-    text-decoration: none;
-    color: rgb(37, 36, 36);
-    box-shadow: 3px 2px 3px 2px black;
-    gap: 2rem;
-    margin: 1rem 2rem;
-    padding: 0.5rem;
-
-
-}
-/* Estilos  Contenido Principal INICIO */
-
-
-.mainPrincipal{
-    grid-area: main;
-}
-
-.sectionPrincipal{
-    grid-area: section;
-    margin: 2rem;
-    background-color:#8f8f8f ;
-}
-
-.footerPrincipal{
-    grid-area: footer;
-    background-color: #535353;
-}
-
-.indumentariaDeportiva{
-    text-align: center;
-    color: rgb(0, 0, 0);
-    padding: 1rem;
-    font-style: oblique;
-    font-weight: bold;
-    font-size: 1.7rem;
-}
-
-
-/* Estilos de Contenido Secundario INICIO*/
-
-.sobreNosotros{
-    padding: 2rem;
-    text-align: center;
-}
-
-.parrafoNosotros{
-    text-align: center;
-    font-style: italic;
-    font-size: 1rem;
-
-}
-
-/* Estilos de Footer INICIO */
-
-
-.politicaIndumentaria{
-    list-style: none;
-    text-align: left;
-    position: absolute;
-    display: block;    
-    padding: 0.1rem;
-    font-size: small;
-    text-decoration: underline;   
-}
-
-.redesIndumentaria{
-    text-align: right;
-    align-items: center;
-    padding: 0.1rem;
-    font-size: small;
-    list-style: none;
-}
-
-.copyrightInicio{
-    text-align: center;    
-    background-color: rgb(63, 63, 63);
-    display: block;
-    margin-block-end: 0%;    
-}
-
-
-
-/* Estilos Pagina Mujeres */ 
-
-.contenido-mujer{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 0fr 0fr;
-    grid-template-rows: 1fr 1fr 3fr 0.1fr;
-    grid-template-areas: 
-        "header header header"
-        "main main main"
-        "section section section"
-        "footer footer footer";
-}
+/* Variables */
+/* Estilos Pagina Mujeres */
+.contenido-mujer {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 0fr 0fr;
+  grid-template-rows: 1fr 1fr 3fr 0.1fr;
+  grid-template-areas: "header header header" "main main main" "section section section" "footer footer footer"; }
 
 /* HEADER MUJERES */
+.headerMujer {
+  grid-area: header;
+  background-color: e6e0c5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
-.headerMujer{
-    grid-area: header;
-    background-color: rgb(100, 100, 100);
-    display: flex;
-    justify-content:space-between;
-    align-items: center;    
-}
+.tituloMujer {
+  font-size: 2rem; }
 
-.tituloMujer{
-    font-size: 2rem;
-}
-
-.inicioMujeres{
-    font-size: 1rem;
-    padding: 0px 2rem;
-}
+.inicioMujeres {
+  font-size: 1rem;
+  padding: 0px 2rem; }
 
 /* MAIN MUJERES */
+.tituloProductos {
+  margin: 1rem;
+  padding: 2.5rem;
+  text-align: center;
+  text-decoration: underline; }
 
-.tituloProductos{
-    margin: 1rem;
-    padding: 2.5rem;
-    text-align: center;
-    text-decoration: underline;
-}
+.mainMujer {
+  grid-area: main; }
 
-.mainMujer{
-    grid-area: main;
-}
+.ropaMujeres {
+  display: flex;
+  justify-content: space-around; }
 
-.ropaMujeres{
-    display: flex;
-    justify-content: space-around;
-}
+.remerasMujeres {
+  display: inline;
+  margin: 2rem 0px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bolder; }
 
-.remerasMujeres{
-    display: inline;
-    margin: 2rem 0px;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: bolder;
-}
+.calzasMujeres {
+  display: inline;
+  margin: 2rem 0px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bolder; }
 
-.calzasMujeres{
-    display: inline;
-    margin: 2rem 0px;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: bolder;
-}
+.sectionMujer {
+  grid-area: section; }
 
-.sectionMujer{
-    grid-area: section;
-}
-
-.imagenesMujer{
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem 2rem;
-}
+.imagenesMujer {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 2rem; }
 
 /* Footer Mujer */
+.footerMujer {
+  grid-area: footer;
+  background-color: #535353;
+  position: relative;
+  display: block;
+  bottom: 0;
+  margin: 2.5rem 0px 0px; }
 
-
-.footerMujer{
-    grid-area: footer;
-    background-color: #535353;
-    position:relative;
-    display:block;
-    bottom: 0;
-    margin: 2.5rem 0px 0px;
-}
-
+/* Variables */
 /* Estilos Pagina Hombres */
-
-.contenido-hombre{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 0fr 0fr ;
-    grid-template-rows: 1fr 1fr 3fr 0.1fr ;
-    grid-template-areas: 
-        "header header header"
-        "main main main"
-        "section section section"
-        "footer footer footer";
-}
+.contenido-hombre {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 0fr 0fr;
+  grid-template-rows: 1fr 1fr 3fr 0.1fr;
+  grid-template-areas: "header header header" "main main main" "section section section" "footer footer footer"; }
 
 /* estilos del header HOMBRE */
+.headerHombre {
+  grid-area: header;
+  background-color: e6e0c5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
-.headerHombre{
-    grid-area: header;
-    background-color: rgb(100, 100, 100);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
+.tituloHombre {
+  font-size: 2rem; }
 
-.tituloHombre{
-    font-size: 2rem;
-}
-
-.inicioHombre{
-    font-size: 1rem;
-    padding: 0px 2.5rem;    
-}
-
+.inicioHombre {
+  font-size: 1rem;
+  padding: 0px 2.5rem; }
 
 /* estilos del main HOMBRE */
+.mainHombre {
+  grid-area: main; }
 
-.mainHombre{
-    grid-area: main;
-}
+.titulo-productos-hombres {
+  margin: 1rem;
+  padding: 2.5rem;
+  text-align: center;
+  text-decoration: underline; }
 
-.titulo-productos-hombres{
-    margin: 1rem;
-    padding: 2.5rem;
-    text-align: center;
-    text-decoration: underline;
-}
+.sectionHombre {
+  grid-area: section; }
 
-.sectionHombre{
-    grid-area: section;
-}
+.imagenesHombres {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem 3rem; }
 
-.imagenesHombres{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 3rem 3rem;
-}
+.remerasHombre {
+  display: inline;
+  margin: 2rem 0px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bolder; }
 
-.remerasHombre{
-    display: inline;
-    margin: 2rem 0px;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    
-}
+.shortsHombre {
+  display: inline;
+  margin: 2rem 0px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bolder; }
 
-.shortsHombre{
-    display: inline;
-    margin: 2rem 0px;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    
-}
+.ropaHombre {
+  display: flex;
+  justify-content: space-around; }
 
-.ropaHombre{
-    display: flex;
-    justify-content: space-around;
-    
-}
+/* estilos de footer HOMBRES */
+.footerHombre {
+  grid-area: footer;
+  background-color: #535353;
+  position: relative;
+  display: block;
+  bottom: 0;
+  margin: 2.5rem 0px 0px; }
 
-/* estilos de footer HOMBRES */ 
-
-.footerHombre{
-    grid-area: footer;
-    background-color: #535353;
-    position:relative;
-    display:block;
-    bottom: 0;
-    margin: 2.5rem 0px 0px;
-}
-
+/* Variables */
 /* Estilos pagina Chicos */
-
-.contenido-chicos{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 0fr 0fr ;
-    grid-template-rows: 1fr 1fr 3fr 0.1fr ;
-    grid-template-areas: 
-        "header header header"
-        "main main main"
-        "section section section"
-        "footer footer footer";    
-}
+.contenido-chicos {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 0fr 0fr;
+  grid-template-rows: 1fr 1fr 3fr 0.1fr;
+  grid-template-areas: "header header header" "main main main" "section section section" "footer footer footer"; }
 
 /* estilos del header CHICOS */
+.headerChicos {
+  grid-area: header;
+  background-color: e6e0c5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
-.headerChicos{
-    grid-area: header;
-    background-color: rgb(100, 100, 100);
-    display: flex;
-    justify-content:space-between;
-    align-items: center;    
-}
+.tituloChicos {
+  font-size: 2rem; }
 
-.tituloChicos{
-    font-size: 2rem;
-}
-
-.inicioChicos{
-    font-size: 1rem;
-    padding: 0px 2.5rem;
-}
-
+.inicioChicos {
+  font-size: 1rem;
+  padding: 0px 2.5rem; }
 
 /* estilos de main CHICOS */
+.mainChicos {
+  grid-area: main; }
 
-.mainChicos{
-    grid-area: main;
-}
+.sectionChicos {
+  grid-area: section; }
 
-.sectionChicos{
-    grid-area: section;
-}
+.remerasChicos {
+  display: inline;
+  margin: 30px 0px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bolder; }
 
-.remerasChicos{
-    display: inline;
-    margin: 30px 0px;
-    padding: 5px;
-    font-size: 20px;
-    font-weight: bolder;
-}
+.shortsChicos {
+  display: inline;
+  margin: 30px 0px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bolder; }
 
-.shortsChicos{
-    display: inline;
-    margin: 30px 0px;
-    padding: 5px;
-    font-size: 20px;
-    font-weight: bolder;
-}
+.ropaChicos {
+  display: flex;
+  justify-content: space-around; }
 
-.ropaChicos{
-    display: flex;
-    justify-content: space-around;
-}
+.imagenesChicos {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px; }
 
-.imagenesChicos{
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 20px;
-}
+/* estilos de footer CHICOS */
+.footerChicos {
+  grid-area: footer;
+  background-color: #535353;
+  position: relative;
+  display: block;
+  bottom: 0;
+  margin: 2rem 0px 0px; }
 
-/* estilos de footer CHICOS */ 
-
-.footerChicos{
-    grid-area: footer;
-    background-color: #535353;
-    position:relative;
-    display:block;
-    bottom: 0;
-    margin: 50px 0px 0px;    
-}
-
-
+/* Variables */
 /* Estilos Pagino Nosotros */
-
 /* estilos del header NOSOTROS */
+.headerNosotros {
+  background-color: e6e0c5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
-.headerNosotros{
-    background-color: rgb(100, 100, 100);
-    display: flex;
-    justify-content:space-between;
-    align-items: center;    
-}
+.inicioNosotros {
+  padding: 0px 50px; }
 
-.inicioNosotros{
-    padding: 0px 50px;
-}
-
-.tituloNosotros{
-    text-decoration:none;
-}
+.tituloNosotros {
+  text-decoration: none; }
 
 /* estilos del main NOSOTROS */
+.tituloHistoria {
+  text-align: center;
+  padding: 60px 0px 30px;
+  text-decoration: underline; }
 
-.tituloHistoria{
-    text-align: center;
-    padding: 60px 0px 30px;
-    text-decoration: underline;
-}
+.textoHistoria {
+  text-align: justify;
+  text-align: center;
+  padding: 50px 50px;
+  font-style: oblique; }
 
-.textoHistoria{
-    text-align: justify;
-    text-align: center;
-    padding: 50px 50px;
-    font-style: oblique;
-}
+.opinion {
+  text-align: left;
+  margin: 20px; }
 
-.opinion{
-    text-align: left;
-    margin: 20px;
-    
-}
+.datos {
+  margin: 10px;
+  padding: 20px; }
 
-.datos{
-    margin: 10px;
-    padding: 20px;
-}
+/* estilos de footer NOSOTROS */
+.footerNosotros {
+  background-color: #535353;
+  position: relative;
+  display: block;
+  bottom: 0;
+  margin: 50px 0px 0px; }
 
-/* estilos de footer NOSOTROS */ 
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-.footerNosotros{
-    background-color: #535353;
-    position:relative;
-    display:block;
-    bottom: 0;
-    margin: 50px 0px 0px;    
-}
+/*Estilos para la Pagina Principal */
+/* Estilos Generales INICIO */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ebc4a9; }
+
+/* Estilos del Header INICIO */
+.contenido {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr 1fr 0.1fr;
+  grid-template-areas: "header header header header" "main main main main" "section section section section" "footer footer footer footer"; }
+
+.headerPrincipal {
+  grid-area: header;
+  background-color: e6e0c5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+header img {
+  filter: drop-shadow(1px 1px 3px);
+  animation-name: logo;
+  animation-iteration-count: infinite;
+  animation-duration: 3s; }
+
+@keyframes logo {
+  to {
+    transform: scale(1); }
+  from {
+    transform: scale(1.3); } }
+
+.logo {
+  position: relative;
+  height: 6rem;
+  width: 6rem; }
+
+.menuIndex ul {
+  list-style: none;
+  display: flex; }
+
+.menuIndex ul li:hover {
+  font-weight: bold;
+  transform: scale(0.9);
+  transition: 0.5s;
+  filter: drop-shadow(5px 5px 3px); }
+
+.menuIndex ul li a {
+  background-color: #cc8383;
+  text-decoration: none;
+  color: #252424;
+  box-shadow: 3px 2px 3px 2px black;
+  gap: 2rem;
+  margin: 1rem 2rem;
+  padding: 0.5rem; }
+
+/* Estilos  Contenido Principal INICIO */
+.mainPrincipal {
+  grid-area: main; }
+
+.sectionPrincipal {
+  grid-area: section;
+  margin: 2rem;
+  background-color: #cc8383; }
+
+.footerPrincipal {
+  grid-area: footer;
+  background-color: #bbb59b; }
+
+.indumentariaDeportiva {
+  text-align: center;
+  color: black;
+  padding: 1rem;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 1.7rem; }
+
+/* Estilos de Contenido Secundario INICIO*/
+.sobreNosotros {
+  padding: 2rem;
+  text-align: center; }
+
+.parrafoNosotros {
+  text-align: center;
+  font-style: italic;
+  font-size: 1rem; }
+
+/* Estilos de Footer INICIO */
+.politicaIndumentaria {
+  list-style: none;
+  text-align: left;
+  position: absolute;
+  display: block;
+  padding: 0.1rem;
+  font-size: small;
+  text-decoration: underline; }
+
+.redesIndumentaria {
+  text-align: right;
+  align-items: center;
+  padding: 0.1rem;
+  font-size: small;
+  list-style: none; }
+
+.copyrightInicio {
+  text-align: center;
+  background-color: #e6e0c5;
+  display: block;
+  margin-block-end: 0%; }
