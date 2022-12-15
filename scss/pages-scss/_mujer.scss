@@ -1,0 +1,92 @@
+/* Variables */
+
+@import "../utilidades/variables";
+
+/* Estilos Pagina Mujeres */ 
+
+.contenido-mujer{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 0fr 0fr;
+    grid-template-rows: 1fr 1fr 3fr 0.1fr;
+    grid-template-areas: 
+        "header header header"
+        "main main main"
+        "section section section"
+        "footer footer footer";
+}
+
+/* HEADER MUJERES */
+
+.headerMujer{
+    grid-area: header;
+    background-color: $color-principal;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;    
+}
+
+.tituloMujer{
+    font-size: 2rem;
+}
+
+.inicioMujeres{
+    font-size: 1rem;
+    padding: 0px 2rem;
+}
+
+/* MAIN MUJERES */
+
+.tituloProductos{
+    margin: 1rem;
+    padding: 2.5rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.mainMujer{
+    grid-area: main;
+}
+
+.ropaMujeres{
+    display: flex;
+    justify-content: space-around;
+}
+
+.remerasMujeres{
+    display: inline;
+    margin: 2rem 0px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.calzasMujeres{
+    display: inline;
+    margin: 2rem 0px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.sectionMujer{
+    grid-area: section;
+}
+
+.imagenesMujer{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 2rem;
+}
+
+/* Footer Mujer */
+
+
+.footerMujer{
+    grid-area: footer;
+    background-color: #535353;
+    position:relative;
+    display:block;
+    bottom: 0;
+    margin: 2.5rem 0px 0px;
+}

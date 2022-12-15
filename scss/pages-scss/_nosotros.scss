@@ -1,0 +1,58 @@
+/* Variables */
+
+@import "../utilidades/variables";
+
+/* Estilos Pagino Nosotros */
+
+/* estilos del header NOSOTROS */
+
+.headerNosotros{
+    background-color: $color-principal;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;    
+}
+
+.inicioNosotros{
+    padding: 0px 50px;
+}
+
+.tituloNosotros{
+    text-decoration:none;
+}
+
+/* estilos del main NOSOTROS */
+
+.tituloHistoria{
+    text-align: center;
+    padding: 60px 0px 30px;
+    text-decoration: underline;
+}
+
+.textoHistoria{
+    text-align: justify;
+    text-align: center;
+    padding: 50px 50px;
+    font-style: oblique;
+}
+
+.opinion{
+    text-align: left;
+    margin: 20px;
+    
+}
+
+.datos{
+    margin: 10px;
+    padding: 20px;
+}
+
+/* estilos de footer NOSOTROS */ 
+
+.footerNosotros{
+    background-color: #535353;
+    position:relative;
+    display:block;
+    bottom: 0;
+    margin: 50px 0px 0px;    
+}
