@@ -61,7 +61,7 @@
 /* Footer Mujer */
 .footerMujer {
   grid-area: footer;
-  background-color: #535353;
+  background-color: #bbb59b;
   position: relative;
   display: block;
   bottom: 0;
@@ -130,7 +130,7 @@
 /* estilos de footer HOMBRES */
 .footerHombre {
   grid-area: footer;
-  background-color: #535353;
+  background-color: #bbb59b;
   position: relative;
   display: block;
   bottom: 0;
@@ -193,7 +193,7 @@
 /* estilos de footer CHICOS */
 .footerChicos {
   grid-area: footer;
-  background-color: #535353;
+  background-color: #bbb59b;
   position: relative;
   display: block;
   bottom: 0;
@@ -253,7 +253,7 @@
 /* estilos de footer NOSOTROS */
 .footerNosotros {
   grid-area: footer;
-  background-color: #535353;
+  background-color: #bbb59b;
   position: relative;
   display: block;
   bottom: 0;
@@ -329,7 +329,8 @@ header img {
 .sectionPrincipal {
   grid-area: section;
   margin: 2rem;
-  background-color: #cc8383; }
+  background-color: #cc8383;
+  border-radius: 1rem; }
 
 .footerPrincipal {
   grid-area: footer;
@@ -349,6 +350,7 @@ header img {
   text-align: center; }
 
 .parrafoNosotros {
+  padding: 1.5rem;
   text-align: center;
   font-style: italic;
   font-size: 1rem; }

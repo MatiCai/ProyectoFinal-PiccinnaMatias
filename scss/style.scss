@@ -105,7 +105,8 @@ header img{
 .sectionPrincipal{
     grid-area: section;
     margin: 2rem;
-    background-color:#cc8383 ;
+    background-color:#cc8383;
+    border-radius: 1rem;
 }
 
 .footerPrincipal{
@@ -131,6 +132,7 @@ header img{
 }
 
 .parrafoNosotros{
+    padding: 1.5rem;
     text-align: center;
     font-style: italic;
     font-size: 1rem;
