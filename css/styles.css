@@ -225,7 +225,10 @@
 
 /* estilos del main NOSOTROS */
 .main-nosotros {
-  grid-area: main; }
+  grid-area: main;
+  margin: 2rem;
+  background-color: #cc8383;
+  border-radius: 1rem; }
 
 .tituloHistoria {
   text-align: center;
