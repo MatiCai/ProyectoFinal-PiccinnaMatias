@@ -221,7 +221,8 @@
   padding: 0px 2.5rem; }
 
 .tituloNosotros {
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 2rem; }
 
 /* estilos del main NOSOTROS */
 .main-nosotros {
@@ -232,8 +233,7 @@
 
 .tituloHistoria {
   text-align: center;
-  padding: 4rem 0px 2rem;
-  text-decoration: underline; }
+  padding: 4rem 0px 2rem; }
 
 .textoHistoria {
   text-align: justify;
@@ -247,11 +247,15 @@
 
 .opinion {
   text-align: left;
-  margin: 1rem; }
+  margin: 1rem;
+  padding: 1.5rem;
+  text-decoration: underline; }
 
 .datos {
   margin: 1rem;
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  border-style: groove;
+  border-color: black; }
 
 /* estilos de footer NOSOTROS */
 .footerNosotros {
